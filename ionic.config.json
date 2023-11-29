@@ -1,0 +1,7 @@
+{
+  "name": "android-flavor-example",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
