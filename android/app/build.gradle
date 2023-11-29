@@ -22,6 +22,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+  flavorDimensions "animal"
+  productFlavors {
+    cat {
+      dimension "animal"
+      applicationId "io.ionic.cat"
+    }
+    dog {
+      dimension "animal"
+      applicationId "io.ionic.dog"
+    }
+  }
 }
 
 repositories {

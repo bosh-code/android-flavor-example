@@ -9,7 +9,15 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build:android:cat:apk": "cap build android --flavor=cat --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=APK --signing-type=apksigner",
+    "build:android:cat:apk:jar": "cap build android --flavor=cat --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=APK --signing-type=jarsigner",
+    "build:android:cat:aab": "cap build android --flavor=cat --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=AAB --signing-type=apksigner",
+    "build:android:cat:aab:jar": "cap build android --flavor=cat --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=AAB --signing-type=jarsigner",
+    "build:android:dog:apk": "cap build android --flavor=dog --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=APK --signing-type=apksigner",
+    "build:android:dog:apk:jar": "cap build android --flavor=dog --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=APK --signing-type=jarsigner",
+    "build:android:dog:aab": "cap build android --flavor=dog --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=AAB --signing-type=apksigner",
+    "build:android:dog:aab:jar": "cap build android --flavor=dog --keystorepath=key.keystore --keystorepass=foobar --keystorealias=key0 --keystorealiaspass=foobar --androidreleasetype=AAB --signing-type=jarsigner"
   },
   "private": true,
   "dependencies": {
